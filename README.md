@@ -1,4 +1,4 @@
-# Wedding Planning Folder
+# Awesome wedding planning
 
 Anonymised case study and reusable skill, distilled from a real wedding plan.
 
