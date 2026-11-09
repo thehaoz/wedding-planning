@@ -1,0 +1,79 @@
+{
+  "title": "Wedding Day Programme (example data - replace everything)",
+  "run_sheet": [
+    {"section": "Two nights before"},
+    {"time": "10.00am", "duration": "3h", "event": "Pack logistics by station (see Packing List tab) and label each box",
+     "lead": "Groom", "people": "Couple", "remarks": "One box per station", "status": "new"},
+    {"time": "7.00pm", "duration": "2h", "event": "Gown collection and rehearsal",
+     "lead": "Bride", "people": "Couple, family", "remarks": "Note return date and deposit", "status": "updated"},
+    {"section": "One night before - Venue"},
+    {"time": "8.30pm", "duration": "2h", "event": "Venue to set up tables and chairs; florist to set up ceremony table",
+     "lead": "Venue coordinator", "people": "Venue, florist, couple, family",
+     "remarks": "Confirm what can be left overnight and the security arrangement", "status": "confirm"},
+    {"section": "Wedding day - morning prep (Bride's home)"},
+    {"time": "4.30am", "duration": "3h", "event": "Makeup for bride starts",
+     "lead": "Makeup artist", "people": "Makeup artist, bride", "remarks": "Aim to be in gown by 7.30am"},
+    {"time": "7.00am", "duration": "30 mins", "event": "Photographer arrives\n- Parents veil the bride\n- Family shots",
+     "lead": "Photographer", "people": "Photographer, bride, family"},
+    {"time": "8.15am", "duration": "5 mins", "event": "Final check before leaving: bouquet, emergency kit, phones, IDs, rings",
+     "lead": "Bride's attendant", "people": "Bride's attendant, bride"},
+    {"section": "Wedding day - ceremony"},
+    {"time": "10.00am", "duration": "40 mins", "event": "Tea ceremony (see Tea Ceremony tab)",
+     "lead": "Tea caller", "people": "Couple, both families, photographer", "remarks": "Backup flasks of hot water"},
+    {"time": "11.15am", "duration": "30 mins", "event": "Solemnisation",
+     "lead": "Officiant", "people": "Couple, officiant, 2 witnesses", "remarks": "Witnesses bring ID", "status": "confirm"},
+    {"section": "Wedding day - reception"},
+    {"time": "12.15pm", "duration": "2h", "event": "Lunch reception",
+     "lead": "Emcee", "people": "All guests", "remarks": "Caterer briefed on dietary needs"},
+    {"time": "3.15pm", "event": "Venue cleared; keys returned",
+     "lead": "Day-of Captain", "people": "Captain, parents", "remarks": "Confirm clear-out time with venue in writing", "status": "confirm"}
+  ],
+  "tea_ceremony": [
+    {"section": "Family A"},
+    {"start": 0.4166666666666667, "duration_min": 2, "side": "Grandparent", "relatives": "Grandfather", "address": "Gong Gong", "pax": 1, "called_by": "Aunt A"},
+    {"duration_min": 5, "side": "Both sets of parents", "relatives": "Parents (combined)", "address": "Mum, Dad", "pax": 4, "called_by": "Aunt A"},
+    {"section": "Family B - paternal"},
+    {"duration_min": 3, "side": "Groom - paternal", "relatives": "Uncle and aunt", "address": "Uncle, Aunty", "pax": 2, "called_by": "Aunt A"},
+    {"duration_min": 2.5, "side": "Bride - maternal", "relatives": "Aunt", "address": "Auntie", "pax": 1, "called_by": "Aunt A", "notes": "Confirm if spouse attends"}
+  ],
+  "emcee_script": [
+    {"section": "Pre-event"},
+    {"cue": "A1", "time": "9.30am", "segment": "Emcee and AV arrive", "trigger": "On arrival",
+     "script": "[Note] Check in with the Day-of Captain. Test microphones and the offline playlist.",
+     "av_cue": "Mic check", "standby": "AV person", "length": "-", "notes": "Bring printed and phone copy"},
+    {"section": "Ceremony"},
+    {"cue": "S1", "time": "10.50am", "segment": "Seating call", "trigger": "Officiant briefing done",
+     "script": "Good morning everyone! The ceremony will begin in 10 minutes. Please take your seats.",
+     "script_2": "[Second-language version here]", "av_cue": "Lower background music", "standby": "Family", "length": "1 min"}
+  ],
+  "music_av": [
+    {"cue": "S5", "time": "11.15am", "moment": "Bridal entrance", "song": "[Song TBC]", "stop_when": "Bride reaches groom", "volume": "Medium"},
+    {"cue": "L3", "time": "12.15pm", "moment": "Lunch march-in", "song": "[Song TBC]", "stop_when": "Couple at front", "volume": "High"},
+    {"cue": "L8", "time": "12.40pm", "moment": "Photo montage", "song": "[File name]", "stop_when": "Video ends, then background music", "volume": "Medium"}
+  ],
+  "angbaos": [
+    {"name": "Makeup artist", "amount": 30, "hand_over_by": "Bride", "when": "Morning"},
+    {"name": "Officiant", "amount": 100, "hand_over_by": "Groom", "when": "After ceremony"},
+    {"name": "Helper crew (each)", "amount": 50, "hand_over_by": "Day-of Captain", "when": "After pack-up"}
+  ],
+  "packing_list": [
+    {"section": "Ceremony"},
+    {"station": "Ceremony", "item": "Wedding bands in box", "qty": 1, "provided_by": "Ring keeper", "remarks": "Hand to officiant 10 min before"},
+    {"station": "Ceremony", "item": "Marriage documents and pen", "qty": 1, "provided_by": "Ring keeper"},
+    {"section": "Reception"},
+    {"station": "Reception", "item": "Guest book and pen", "qty": 1, "provided_by": "Couple"},
+    {"station": "Reception", "item": "Angbao boxes", "qty": 2, "provided_by": "Couple", "remarks": "Trusted custodian each side"}
+  ],
+  "vendors": [
+    {"category": "Makeup", "vendor": "Vendor A", "items": "Bridal makeup and hair", "contact": "Name (phone)", "arrival": "4.30am"},
+    {"category": "Photographer", "vendor": "Vendor B", "items": "Actual day photography", "contact": "Name (phone)", "arrival": "7.00am"},
+    {"category": "Venue", "vendor": "Venue C", "items": "Venue and catering coordination", "contact": "Name (phone)", "arrival": "-", "remarks": "Clear-out by 3.15pm"}
+  ],
+  "guests": [
+    {"table": "Table 1 (Family)", "seat": "1", "name": "Guest One", "meal": "Chicken", "remarks": "Elderly"},
+    {"table": "Table 1 (Family)", "seat": "2", "name": "Guest Two", "meal": "Fish", "remarks": "Seafood allergy"},
+    {"table": "Table 2 (Friends)", "seat": "1", "name": "Guest Three", "meal": "Vegetarian", "remarks": ""},
+    {"table": "Table 2 (Friends)", "seat": "2", "name": "Guest Four", "meal": "Kids meal", "remarks": "High chair"}
+  ],
+  "meal_options": ["Chicken", "Fish", "Vegetarian", "Kids meal"]
+}
